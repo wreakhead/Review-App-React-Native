@@ -4,31 +4,23 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import home from "../screens/home";
 import React from "react";
 import review from "../screens/review";
+import { Icon } from "react-native-elements";
+
 const Stack = createNativeStackNavigator();
-export const Navigator = () => {
+export const Navigator = ({ navigation }) => {
   return (
-    <NavigationContainer>
+    <NavigationContainer independent={true}>
       <SafeAreaProvider>
         <Stack.Navigator>
           <Stack.Screen
             name="home"
             component={home}
-            options={{
-              title: "GameSpot",
-              headerStyle: {
-                backgroundColor: "tomato",
-              },
-            }}
+            options={{ headerShown: false }}
           />
           <Stack.Screen
             name="review"
             component={review}
-            options={{
-              title: "Reviews",
-              headerStyle: {
-                backgroundColor: "tomato",
-              },
-            }}
+            options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </SafeAreaProvider>

@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Home from "./screens/home";
 import { Navigator } from "./routes/routes";
+import { MasterDrawer } from "./routes/MasterDrawer";
 
 export default function App() {
   const [loaded] = useFonts({
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Navigator />
+      <MasterDrawer />
     </SafeAreaView>
   );
 }

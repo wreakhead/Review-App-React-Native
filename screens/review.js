@@ -16,7 +16,7 @@ const review = ({ route, navigation }) => {
 
       <Text style={globalStyles.rating}>{route.params.rating} 🌟</Text>
       <Text style={globalStyles.heading}>About:</Text>
-      <ScrollView style={globalStyles.about}>
+      <ScrollView>
         <Text style={globalStyles.para}>{route.params.body}</Text>
       </ScrollView>
     </View>

@@ -3,8 +3,9 @@ import { StyleSheet } from "react-native";
 export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
+    padding: 15,
     fontFamily: "nunito-regular",
+    marginBottom: 10,
   },
   header: {
     fontFamily: "nunito-bold",
@@ -13,13 +14,10 @@ export const globalStyles = StyleSheet.create({
   },
   para: {
     lineHeight: 20,
+    fontFamily: "nunito-regular",
+    fontSize: 15,
   },
-  about: {
-    backgroundColor: "lightgray",
-    margin: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-  },
+
   gameCards: {
     backgroundColor: "lightgray",
     padding: 5,
@@ -58,6 +56,5 @@ export const globalStyles = StyleSheet.create({
   heading: {
     fontFamily: "nunito-bold",
     fontSize: 17,
-    paddingLeft: 5,
   },
 });
